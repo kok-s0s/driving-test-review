@@ -1,15 +1,15 @@
-import React from 'react';
+import './App.scss';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Content from './components/Content/Content';
 import Footer from './components/Footer/Footer';
 import Button from './components/Button/Button';
 import Divider from './components/Divider/Divider';
-import HomePage from './view/HomePage';
-import About from './view/About';
-import DataBase from './view/DataBase';
-
-import './App.scss';
+import { Spin } from 'antd';
+const HomePage = React.lazy(() => import('./view/HomePage'));
+const About = React.lazy(() => import('./view/About'));
+const DataBase = React.lazy(() => import('./view/DataBase'));
 
 const App = () => {
     return (
@@ -36,15 +36,25 @@ const App = () => {
                             <Divider
                                 style={{ marginBottom: '1rem', width: '70%' }}
                             />
-                            <Routes>
-                                <Route exact path="/" element={<HomePage />} />
-                                <Route exact path="about" element={<About />} />
-                                <Route
-                                    exact
-                                    path="database"
-                                    element={<DataBase />}
-                                />
-                            </Routes>
+                            <Suspense fallback={<Spin size="large" />}>
+                                <Routes>
+                                    <Route
+                                        exact
+                                        path="/"
+                                        element={<HomePage />}
+                                    />
+                                    <Route
+                                        exact
+                                        path="about"
+                                        element={<About />}
+                                    />
+                                    <Route
+                                        exact
+                                        path="database"
+                                        element={<DataBase />}
+                                    />
+                                </Routes>
+                            </Suspense>
                         </Router>
                     </Content>
                     <Footer />
