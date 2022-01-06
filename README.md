@@ -1,3 +1,5 @@
+<details><summary>Create React App README</summary>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -31,13 +33,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: this is a one-way operation. Once you `eject` , you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject` . The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -68,3 +70,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+--- 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b4524cb-c5f9-421c-ac90-1ec353322673/deploy-status)](https://app.netlify.com/sites/driving-test-review/deploys)
+
+# 技术支持
+
+**基于** `Create React App`
+
+**目前已使用**
+
+* [React](https://zh-hans.reactjs.org/) -> 用于构建用户界面
+* [React Router](https://reactrouter.com/docs/en/v6/getting-started/overview) -> 用于路由配置
+* [Ant Design](https://ant.design/index-cn) -> 基于 React 的组件库
+* [Sass](https://sass-lang.com/) -> 用于预处理 CSS
+
+* [fonts](https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou?subset=chinese-simplified&preview.size=16&preview.layout=row) -> 个性化字体
+
+**待使用**
+
+* [ECharts](https://echarts.apache.org/zh/index.html) -> 用于可视化数据
+* [Redux](http://cn.redux.js.org/) -> 用于状态管理
+       
