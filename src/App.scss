@@ -1,5 +1,16 @@
 @import '~antd/dist/antd.css';
 
+@font-face {
+    font-family: 'ZCOOLKuaiLeRegular';
+    src: local('ZCOOLKuaiLeRegular'),
+        url('./fonts/ZCOOLKuaiLe-Regular.ttf') format('truetype');
+    font-weight: 100;
+}
+
+* {
+    font-family: cursive, ZCOOLKuaiLeRegular;
+}
+
 .container__flex {
     display: flex;
 
