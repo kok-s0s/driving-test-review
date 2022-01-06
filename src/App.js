@@ -7,14 +7,14 @@ import Footer from './components/Footer/Footer';
 import Button from './components/Button/Button';
 import Divider from './components/Divider/Divider';
 import { Spin } from 'antd';
-const HomePage = React.lazy(() => import('./view/HomePage'));
-const About = React.lazy(() => import('./view/About'));
-const DataBase = React.lazy(() => import('./view/DataBase'));
+const HomePage = React.lazy(() => import('./view/HomePage/HomePage'));
+const About = React.lazy(() => import('./view/About/About'));
+const DataBase = React.lazy(() => import('./view/DataBase/DataBase'));
 
 const App = () => {
     return (
         <div className="App">
-            <div className="container">
+            <div className="container__flex">
                 <div className="left"></div>
                 <div className="main">
                     <Header />

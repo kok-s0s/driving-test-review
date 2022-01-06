@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 
-.container {
+.container__flex {
     display: flex;
 
     // a {
@@ -42,7 +42,7 @@
         background-color: white;
     }
 
-    @media (max-width: 408px) {
+    @media (max-width: 420px) {
 
         .left,
         .right {
