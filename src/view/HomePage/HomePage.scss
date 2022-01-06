@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+
 .homepage {
     .reason {
         p {
+            font-family: 'Noto Serif SC', serif;
             text-align: left;
             font-size: 1.2rem;
             line-height: 2rem;
@@ -15,9 +18,7 @@
         @media (max-width: 420px) {
 
             p {
-                font-size: 1rem;
-                letter-spacing: 0.02rem;
-                line-height: 1.8rem;
+                font-size: 1.2rem;
             }
         }
     }
