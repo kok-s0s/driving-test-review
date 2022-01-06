@@ -81,6 +81,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 **基于** `Create React App`
 
+**[PWA](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps)-渐进式Web应用（支持Chrome）**
+
 **目前已使用**
 
 * [React](https://zh-hans.reactjs.org/) -> 用于构建用户界面
@@ -95,6 +97,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * [ECharts](https://echarts.apache.org/zh/index.html) -> 用于可视化数据
 * [Redux](http://cn.redux.js.org/) -> 用于状态管理
        
+
+`public` 目录结构
+
+```bash
+public
+├── _redirects
+├── assets
+│   ├── icons
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon.ico
+│   │   ├── logo192.png
+│   │   ├── logo256.png
+│   │   ├── logo384.png
+│   │   ├── logo512.png
+│   │   └── maskable.png
+│   ├── pity.png
+│   └── s0s__block.jpg
+├── index.html
+├── manifest.json
+└── robots.txt
+```
 
 `src` 目录结构
 
@@ -120,13 +145,11 @@ src
 ├── fonts
 │   └── ZCOOLKuaiLe-Regular.ttf
 ├── index.js
+├── service-worker.js
+├── serviceWorkerRegistration.js
 ├── styles
 │   └── App.scss
 ├── utils
-│   ├── reportWebVitals.js
-│   ├── service-worker.js
-│   ├── serviceWorkerRegistration.js
-│   └── setupTests.js
 └── view
     ├── About
     │   ├── About.js
