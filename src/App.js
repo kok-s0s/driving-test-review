@@ -1,4 +1,4 @@
-import './App.scss';
+import './styles/App.scss';
 import './fonts/ZCOOLKuaiLe-Regular.ttf';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';

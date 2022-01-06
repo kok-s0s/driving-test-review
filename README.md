@@ -95,3 +95,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * [ECharts](https://echarts.apache.org/zh/index.html) -> 用于可视化数据
 * [Redux](http://cn.redux.js.org/) -> 用于状态管理
        
+
+`src` 目录结构
+
+```bash
+src
+├── App.js
+├── components
+│   ├── Button
+│   │   ├── Button.js
+│   │   └── Button.scss
+│   ├── Content
+│   │   ├── Content.js
+│   │   └── Content.scss
+│   ├── Divider
+│   │   ├── Divider.js
+│   │   └── Divider.scss
+│   ├── Footer
+│   │   ├── Footer.js
+│   │   └── Footer.scss
+│   └── Header
+│       ├── Header.js
+│       └── Header.scss
+├── fonts
+│   └── ZCOOLKuaiLe-Regular.ttf
+├── index.js
+├── styles
+│   └── App.scss
+├── utils
+│   ├── reportWebVitals.js
+│   ├── service-worker.js
+│   ├── serviceWorkerRegistration.js
+│   └── setupTests.js
+└── view
+    ├── About
+    │   ├── About.js
+    │   └── About.scss
+    ├── DataBase
+    │   ├── DataBase.js
+    │   └── DataBase.scss
+    ├── HomePage
+    │   ├── HomePage.js
+    │   └── HomePage.scss
+    └── NoMatch
+        ├── NoMatch.js
+        └── NoMatch.scss
+```
