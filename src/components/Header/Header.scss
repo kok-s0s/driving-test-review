@@ -1,0 +1,55 @@
+.header {
+    text-align: center;
+
+    border-bottom: 0.2rem solid #51accc;
+
+    .author {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    #zh {
+        font-size: 4rem;
+        font-weight: 450;
+    }
+
+    #avator {
+        margin: 3rem 0 1rem 0;
+    }
+
+    #avator img {
+        border-radius: 50%;
+        height: 10rem;
+    }
+
+    #project__name {
+        margin: 2rem 0 2rem 0;
+        font-size: 3rem;
+    }
+
+    @media (max-width: 408px) {
+        .author {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        #zh {
+            font-size: 2rem;
+            font-weight: 450;
+        }
+
+        #avator {
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        #avator img {
+            border-radius: 50%;
+            height: 8rem;
+        }
+
+        #project__name {
+            margin: 1rem 0 1rem 0;
+            font-size: 2rem;
+        }
+    }
+}

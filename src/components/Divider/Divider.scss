@@ -1,0 +1,13 @@
+hr {
+    background-color: #51accc;
+    height: 0.3rem;
+    width: 75%;
+    border-radius: 1rem;
+    border: none;
+}
+
+@media (max-width: 408px) {
+    hr {
+        width: 50%;
+    }
+}
