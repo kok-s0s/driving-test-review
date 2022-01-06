@@ -10,6 +10,7 @@ import { Spin } from 'antd';
 const HomePage = React.lazy(() => import('./view/HomePage/HomePage'));
 const About = React.lazy(() => import('./view/About/About'));
 const DataBase = React.lazy(() => import('./view/DataBase/DataBase'));
+const NoMatch = React.lazy(() => import('./view/NoMatch/NoMatch'));
 
 const App = () => {
     return (
@@ -52,6 +53,10 @@ const App = () => {
                                         exact
                                         path="database"
                                         element={<DataBase />}
+                                    />
+                                    <Route
+                                        path="*"
+                                        element={<NoMatch status={404} />}
                                     />
                                 </Routes>
                             </Suspense>
