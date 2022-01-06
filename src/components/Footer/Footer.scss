@@ -2,16 +2,19 @@
     text-align: center;
     border-top: 0.2rem solid #51accc;
     border-bottom: 0.2rem solid #51accc;
+
     .warning {
         font-size: 2rem;
+
         p {
             margin: 0.5rem 0 0.5rem 0;
         }
     }
 
-    @media (max-width: 408px) {
+    @media (max-width: 420px) {
         .warning {
             font-size: 1rem;
+
             p {
                 margin: 0.3rem;
             }
