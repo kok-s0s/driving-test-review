@@ -30,7 +30,7 @@ const App = () => {
                                 </Link>
 
                                 <Link className="list__link" to="database">
-                                    <Button name="数据库" />
+                                    <Button name="资料库" />
                                 </Link>
                             </div>
                             <Divider
