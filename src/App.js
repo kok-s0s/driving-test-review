@@ -8,10 +8,10 @@ import Footer from './components/Footer/Footer';
 import Button from './components/Button/Button';
 import Divider from './components/Divider/Divider';
 import { Spin } from 'antd';
-const HomePage = React.lazy(() => import('./view/HomePage/HomePage'));
-const About = React.lazy(() => import('./view/About/About'));
-const DataBase = React.lazy(() => import('./view/DataBase/DataBase'));
-const NoMatch = React.lazy(() => import('./view/NoMatch/NoMatch'));
+const HomePage = React.lazy(() => import('./views/HomePage/HomePage'));
+const About = React.lazy(() => import('./views/About/About'));
+const DataBase = React.lazy(() => import('./views/DataBase/DataBase'));
+const NoMatch = React.lazy(() => import('./views/NoMatch/NoMatch'));
 
 const App = () => {
     return (

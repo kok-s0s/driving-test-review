@@ -150,7 +150,7 @@ src
 ├── styles
 │   └── App.scss
 ├── utils
-└── view
+└── views
     ├── About
     │   ├── About.js
     │   └── About.scss
