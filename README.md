@@ -91,10 +91,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * [Sass](https://sass-lang.com/) -> 用于预处理 CSS
 
 * [fonts](https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou?subset=chinese-simplified&preview.size=16&preview.layout=row) -> 个性化字体
-* [json-server](https://pub.dev/documentation/json_server/latest/) -> 用于模拟接口
 
 **待使用**
 
+* [json-server](https://pub.dev/documentation/json_server/latest/) -> 用于模拟接口
 * [ECharts](https://echarts.apache.org/zh/index.html) -> 用于可视化数据
 * [Redux](http://cn.redux.js.org/) -> 用于状态管理
        
@@ -115,6 +115,7 @@ public
 │   │   ├── logo384.png
 │   │   ├── logo512.png
 │   │   └── maskable.png
+│   ├── idea__001.png
 │   ├── pity.png
 │   └── s0s__block.jpg
 ├── index.html
@@ -128,9 +129,15 @@ public
 src
 ├── App.js
 ├── components
+│   ├── Aanalysis
+│   │   ├── Aanalysis.js
+│   │   └── Aanalysis.scss
 │   ├── Button
 │   │   ├── Button.js
 │   │   └── Button.scss
+│   ├── Cognition
+│   │   ├── Cognition.js
+│   │   └── Cognition.scss
 │   ├── Content
 │   │   ├── Content.js
 │   │   └── Content.scss
@@ -140,12 +147,16 @@ src
 │   ├── Footer
 │   │   ├── Footer.js
 │   │   └── Footer.scss
+│   ├── Graphics
+│   │   ├── Graphics.js
+│   │   └── Graphics.scss
 │   └── Header
 │       ├── Header.js
 │       └── Header.scss
 ├── fonts
 │   └── ZCOOLKuaiLe-Regular.ttf
 ├── index.js
+├── mock
 ├── service-worker.js
 ├── serviceWorkerRegistration.js
 ├── styles
