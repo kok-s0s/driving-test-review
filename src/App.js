@@ -12,7 +12,7 @@ import { Spin, BackTop } from 'antd';
 const HomePage = React.lazy(() => import('./views/HomePage/HomePage'));
 const About = React.lazy(() => import('./views/About/About'));
 const DataBase = React.lazy(() => import('./views/DataBase/DataBase'));
-const UpLoadPoint = React.lazy(() => import('./views/UpLoadPoint/UpLoadPoint'));
+const UploadPoint = React.lazy(() => import('./views/UploadPoint/UploadPoint'));
 const NoMatch = React.lazy(() => import('./views/NoMatch/NoMatch'));
 
 const bt__style = {
@@ -81,7 +81,7 @@ const App = () => {
                                     />
                                     <Route
                                         path="upload"
-                                        element={<UpLoadPoint />}
+                                        element={<UploadPoint />}
                                     />
                                     <Route
                                         path="*"

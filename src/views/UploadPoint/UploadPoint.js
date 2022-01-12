@@ -1,12 +1,12 @@
 import { useLocalStorage } from '../../utils/useLocalStorage';
 import { Select, Input, Upload, Button } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import './UpLoadPoint.scss';
+import './UploadPoint.scss';
 
 const { Option } = Select;
 const { TextArea } = Input;
 
-const UpLoadPoint = () => {
+const UploadPoint = () => {
     const [isGraphics, setIsGraphics] = useLocalStorage('isGraphics', false);
     const [qType, setQType] = useLocalStorage('qType', 'CognitionQ');
     const [qDes, setQDes] = useLocalStorage('qDes', '');
@@ -119,4 +119,4 @@ const UpLoadPoint = () => {
     );
 };
 
-export default UpLoadPoint;
+export default UploadPoint;
