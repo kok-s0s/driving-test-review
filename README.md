@@ -91,6 +91,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * [Sass](https://sass-lang.com/) -> 用于预处理 CSS
 
 * [fonts](https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou?subset=chinese-simplified&preview.size=16&preview.layout=row) -> 个性化字体
+* [json-server](https://pub.dev/documentation/json_server/latest/) -> 用于模拟接口
 
 **待使用**
 
@@ -169,9 +170,11 @@ src
 
 这是折腾这东西最烦的地方；
 
-**想法与现实的碰撞⚡️**
-
 ## 科目一
+
+<details>
+
+**想法与现实的碰撞⚡️**
 
 原计划依据《中华人民共和国道路交通安全法》学习与驾驶相关的法律知识，根据该法律中的每一条细则与现实社会生活出现的事件关联起来（利用搜索）；
 
@@ -194,3 +197,19 @@ src
 我会将那个象司机科目一出现过的题目记录下来做归纳；
 
 将那些问题整理好，其实那个象司机考的好多都是同一场景，就换了个样考你。
+
+---
+
+花了8元开通了个考试线索，我现在可以说这个项目可能保底值8元了!🤖
+
+> 但其实我看了开通8元获取的东西无非就是把象司机所有的题细分了下，题还是那个题，只是题目多打了tag就多值8元了，属实666；
+
+```css
+维护正版: !important
+```
+
+> 我会用我自己的理解将这些题目打上我认为的tag，不会说直接把那个打好的tag弄过来，一万个人有一万个哈姆雷特！
+
+> 花了8元其实是为心安，好久没考过试，感觉不会考试～～～
+
+</details>
