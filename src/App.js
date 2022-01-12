@@ -1,3 +1,4 @@
+import { useLocalStorage } from './utils/useLocalStorage';
 import './styles/App.scss';
 import './fonts/ZCOOLKuaiLe-Regular.ttf';
 import React, { Suspense } from 'react';
@@ -11,6 +12,7 @@ import { Spin, BackTop } from 'antd';
 const HomePage = React.lazy(() => import('./views/HomePage/HomePage'));
 const About = React.lazy(() => import('./views/About/About'));
 const DataBase = React.lazy(() => import('./views/DataBase/DataBase'));
+const UploadPoint = React.lazy(() => import('./views/UploadPoint/UploadPoint'));
 const NoMatch = React.lazy(() => import('./views/NoMatch/NoMatch'));
 
 const bt__style = {
@@ -25,6 +27,8 @@ const bt__style = {
 };
 
 const App = () => {
+    const [tabStatus, setTabStatus] = useLocalStorage('tabStatus', 1);
+
     return (
         <div className="App">
             <div className="container__flex">
@@ -35,15 +39,24 @@ const App = () => {
                         <Router>
                             <div className="list">
                                 <Link className="list__link" to="/">
-                                    <Button name="主页" />
+                                    <Button
+                                        name="主页"
+                                        onClick={() => setTabStatus(1)}
+                                    />
                                 </Link>
 
                                 <Link className="list__link" to="about">
-                                    <Button name="关于" />
+                                    <Button
+                                        name="关于"
+                                        onClick={() => setTabStatus(2)}
+                                    />
                                 </Link>
 
                                 <Link className="list__link" to="database">
-                                    <Button name="资料库" />
+                                    <Button
+                                        name="资料库"
+                                        onClick={() => setTabStatus(3)}
+                                    />
                                 </Link>
                             </div>
                             <Divider
@@ -67,11 +80,25 @@ const App = () => {
                                         element={<DataBase />}
                                     />
                                     <Route
+                                        path="upload"
+                                        element={<UploadPoint />}
+                                    />
+                                    <Route
                                         path="*"
                                         element={<NoMatch status={404} />}
                                     />
                                 </Routes>
                             </Suspense>
+                            <Link
+                                className={`${
+                                    tabStatus !== 3 ? 'hide' : 'upload__btn'
+                                }`}
+                                to="upload">
+                                <Button
+                                    name="上传"
+                                    onClick={() => setTabStatus(4)}
+                                />
+                            </Link>
                         </Router>
                     </Content>
                     <Footer />

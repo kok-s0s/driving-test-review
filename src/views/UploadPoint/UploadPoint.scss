@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+
+.upload__point {
+    .question__type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span,
+        p {
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .text__des {
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+        }
+
+    }
+
+    .question__input {
+        .question__describe {
+            margin: 0 2rem 3rem 2rem;
+
+            span,
+            textarea {
+                font-family: 'Noto Serif SC', serif;
+                border: none;
+                border-radius: 0.8rem;
+                background-color: #e7f3f8;
+                box-shadow: -3px 3px 6px #529595;
+                outline: none;
+            }
+        }
+
+        .question__options {
+            margin: 0 1.5rem 2rem 1.5rem;
+
+            .q__option {
+                margin-bottom: 2rem;
+
+                span,
+                textarea {
+                    font-family: 'Noto Serif SC', serif;
+                    border: none;
+                    border-radius: 0.8rem;
+                    background-color: #e7f3f8;
+                    outline: none;
+                }
+            }
+
+            .q__option:nth-child(odd) {
+                textarea {
+                    box-shadow: 3px 3px 6px #529595;
+                }
+            }
+
+            .q__option:nth-child(even) {
+                textarea {
+                    box-shadow: -3px 3px 6px #529595;
+                }
+            }
+        }
+
+        .question__image {
+            .ant-upload-list-picture-container {
+                background-color: #000
+            }
+        }
+    }
+}
