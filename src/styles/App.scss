@@ -24,6 +24,7 @@
     }
 
     .main {
+        position: relative;
         width: 500px;
         height: auto;
         background-color: #a7d0df;
@@ -66,4 +67,13 @@
     .container__flex {
         padding: 0.5rem 0 0.5rem 0;
     }
+}
+
+.ant-back-top {
+    position: absolute;
+    right: 0;
+}
+
+.hide {
+    display: none;
 }

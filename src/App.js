@@ -7,11 +7,22 @@ import Content from './components/Content/Content';
 import Footer from './components/Footer/Footer';
 import Button from './components/Button/Button';
 import Divider from './components/Divider/Divider';
-import { Spin } from 'antd';
+import { Spin, BackTop } from 'antd';
 const HomePage = React.lazy(() => import('./views/HomePage/HomePage'));
 const About = React.lazy(() => import('./views/About/About'));
 const DataBase = React.lazy(() => import('./views/DataBase/DataBase'));
 const NoMatch = React.lazy(() => import('./views/NoMatch/NoMatch'));
+
+const bt__style = {
+    height: 30,
+    width: 30,
+    lineHeight: '30px',
+    borderRadius: '50%',
+    backgroundColor: '#69A9C9',
+    color: '#ffffff',
+    textAlign: 'center',
+    fontSize: 10,
+};
 
 const App = () => {
     return (
@@ -64,6 +75,9 @@ const App = () => {
                         </Router>
                     </Content>
                     <Footer />
+                    <BackTop>
+                        <div style={bt__style}>UP</div>
+                    </BackTop>
                 </div>
                 <div className="right"></div>
             </div>
