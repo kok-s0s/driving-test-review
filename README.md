@@ -176,9 +176,9 @@ src
     ├── NoMatch
     │   ├── NoMatch.js
     │   └── NoMatch.scss
-    └── UploadPoint
-        ├── UploadPoint.js
-        └── UploadPoint.scss
+    └── UpLoadPoint
+        ├── UpLoadPoint.js
+        └── UpLoadPoint.scss
 ```
 
 # 数据收集
