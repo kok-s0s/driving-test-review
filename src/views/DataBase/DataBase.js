@@ -25,14 +25,14 @@ const DataBase = () => {
 
             <div
                 className={`${
-                    currentStatus === 1 ? '' : 'hide'
-                } show__cognition`}>
+                    currentStatus === 1 ? 'show__cognition' : 'hide'
+                }`}>
                 <Cognition />
             </div>
             <div
                 className={`${
-                    currentStatus === 2 ? '' : 'hide'
-                } show__graphics`}>
+                    currentStatus === 2 ? 'show__graphics' : 'hide'
+                }`}>
                 <Graphics />
             </div>
             {/* <Aanalysis /> */}
